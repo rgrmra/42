@@ -1,9 +1,5 @@
 # Piscina
 
-> /[42](https://github.com/rgrmra/42/)/Piscina
-
-
-
 ## Shell
 
 Exercícios de Shell:
