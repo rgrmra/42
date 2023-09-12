@@ -1,10 +1,8 @@
 # Exercício 01: testShell00
 
-> /[42](https://github.com/rgrmra/42)/[Piscina](https://github.com/rgrmra/42/Piscina)/[Shell](https:/github.com/rgrmra/42/Piscina/Shell)/[Shell00](https://github.com/rgrmra/42/Piscina/Shell/Shell00)/ex01
-
 Crie um arquivo de nome testShell00 e que contenha o seguinte output quando o comando `ls -l` é executado:
 
-```shell
+```text
 %> ls -l
 total   1
 -r--r-xr-x  1   XX  XX  40 Jun  1   23:42   testShell00
@@ -20,6 +18,11 @@ Após finalizar os passos anteriores, compacte o arquivo com o comando `tar`, pa
 Os comandos a serem conhecidos nesse exercício são: `ls`, `chmod`, `touch` e o `tar`.
 
 
+##### Tamanho: [ASCII](https://man7.org/linux/man-pages/man7/ascii.7.html)
+
+Antes de verificar qualquer comando, perceba que o arquivo contém 40 _bytes_, isso significa que há até 40 _bytes_ de informações dentro do arquivo. Dê uma olhada na tabela ASCII, ela te auxiliará a colocar as informações necessárias dentro do arquivo.
+
+
 
 ##### Comando: [ls](https://man7.org/linux/man-pages/man1/ls.1.html)
 
@@ -28,6 +31,34 @@ O comando `ls` lista todo o conteúdo de um diretório. A _flag_ `-l` mostra uma
 ```shell
 ls -l
 ls -la
+```
+
+
+
+##### Comando: [touch](https://man7.org/linux/man-pages/man1/touch.1.html)
+
+O comando `touch` altera os metadados de tempo de um arquivo/diretório. A _flag_ `-a` altera a data de acesso, a _flag_ `-m` altera a data de modificação e a _flag_ `-t` define a data no formato _timestamp_ **[[CC]YY]MMDDhhmm[.ss]**.
+
+| timestamp | definição                | tempo |
+| :-------: | :----------------------- | :--:  |
+|    CC     | primeiros digitos do ano |  20   |
+|    YY     | ultimos digitos do ano   |  23   |
+|    MM     | mês                      |  06   |
+|    DD     | dia                      |  01   |
+|    hh     | hora                     |  23   |
+|    mm     | minutos                  |  42   |
+|    ss     | segundos                 |  00   |
+
+Com isso em mente, basta utilizar o comando:
+
+```shell
+touch -amt 202306012342.00 testShell00
+```
+
+O comando `stat` mostrará as datas que foram modificadas, porém, perceba que a _change time_ e _birth time_ não serão modificadas. 
+
+```shell
+stat testShell00
 ```
 
 
@@ -56,6 +87,16 @@ chmod 455 testShell00
 
 
 
-##### Comando: [touch](https://man7.org/linux/man-pages/man1/touch.1.html)
+##### Comando: [tar](https://man7.org/linux/man-pages/man1/tar.1.html)
 
- O comando `touch` altera os metadados de tempo de um arquivo/diretório.
+O comando `tar` serve para compactar o(s) arquivo(s) em um único arquivo para envia-los sem que nenhum alteração aconteça com eles. A _flag_ `-c` cria o arquivo tar e a _flag_ `-f` define qual(is) arquivo(s) será(ão) compactado(s).
+
+```shell
+tar -cf testShell00.tar testShell00
+```
+
+E se quiser descompactar o arquivo basta utilizar a _flag_ `-x` que significa _extract_.
+
+```shell
+tar -xf testShell00.tar
+```
