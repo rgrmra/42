@@ -1,7 +1,5 @@
 # Exercício 00: Z
 
-> /[42](https://github.com/rgrmra/42)/[Piscina](https://github.com/rgrmra/42/Piscina)/[Shell](https:/github.com/rgrmra/42/Piscina/Shell)/[Shell00](https://github.com/rgrmra/42/Piscina/Shell/Shell00)/ex00
-
 Crie um arquivo de nome _z_ que retorne _Z_ seguido de uma nova linha quando utiliza-se o comando: `cat`.
 
 Há alguns modos para se criar um arquivo através do _Shell_. Os dois melhores são utilizando o `touch` e o `echo`.
