@@ -1,9 +1,5 @@
 # 42 São Paulo
 
-> /42
-
-
-
 ## Conteúdo
 
 - [Piscina](./Piscina/)
