@@ -1,6 +1,6 @@
-# Shell01
+# C00
 
-O objetivo dessa lista é te fazer compreender as funcionalidades de um _shell script_ executável no _Shell_. Como imprimir os grupos, como encontrar aqruivos pelas suas extenções, como contar o número de arquivos que há no diretório atual e nos subsequentes, como acessar os seus endereços MAC, como criar arquivos com caracteres de escape, como iteragir com a própria saída do terminal e como utilizar combinações de comandos para um determinado objetivo.
+O objetivo dessa lista é te fazer compreender os comando basicos em C e lógica de programação. Se você ainda não estudou lógica de programação e algoritmos, essa é uma boa hora para começar.
 
 > Basicamente todas as listas visam lhe ensinar algo novo, cabe a você estar ciente deste fato e adaptar-se para evoluir sempre. Copiar todos esses exercícios lhe ajudara a ganhar nota na _Moulinette_, porém, não te salvará no exame. O maior conselho que lhe dou é: aprenda a aprender, faça, não copie.
 
