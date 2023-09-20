@@ -11,7 +11,7 @@ Exercícios de Shell:
 ## C
 Exercícios de C:
 - [C00](./C/C00/) - Lógica de Programação
-- C01 - Ponteiros
+- [C01](./C/C01/) - Ponteiros
 - C02 - Strings
 - C03 - Funções
 - C04 - Conversões
