@@ -12,7 +12,7 @@ Exercícios de Shell:
 Exercícios de C:
 - [C00](./C/C00/) - Lógica de Programação
 - [C01](./C/C01/) - Ponteiros
-- C02 - Strings
+- [C02](./C/C02/) - Strings
 - C03 - Funções
 - C04 - Conversões
 - C05 - Recursividade
