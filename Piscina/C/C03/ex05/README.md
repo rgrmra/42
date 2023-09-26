@@ -35,6 +35,7 @@ if (i == size || j == size)
 {
     return (i + j);
 }
+```
 
 Passado esses dois passos, fazemos a contatenação normalmente.
 
