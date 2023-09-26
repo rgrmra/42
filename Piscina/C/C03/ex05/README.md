@@ -13,7 +13,7 @@ unsigned int    ft_strlcat(char *dest, char *src, unsigned int size);
 
 ---
 
-A `strlcat` tem um comportamento similar a `strlcpy` de retornar um inteiro com o tamanho da`string` que seria gerada, com a diferença que lá ela copiava e aqui ela concatenará. As duas funções evitam _truncation_.
+A `strlcat` tem um comportamento similar a `strlcpy` de retornar um inteiro com o tamanho da `string` que seria gerada, com a diferença que lá ela copiava e aqui ela concatenará. As duas funções evitam _truncation_.
 
 Primeiro, verificamos o tamanho do destino e do _source_.
 
@@ -37,7 +37,7 @@ if (i == size || j == size)
 }
 ```
 
-Passado esses dois passos, fazemos a contatenação normalmente.
+Passado esses dois passos, fazemos a concatenação normalmente.
 
 ```c
 while (src[k] != '\0' && (i + k) != (size - 1))
