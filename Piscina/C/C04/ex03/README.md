@@ -37,7 +37,7 @@ Primeiramente criaremos uma função que elimine espaços. Essa função irá av
 ```c
 void    ft_remove_space(char **str)
 {
-    while (**str != '\0' && (**str == ' ' || (**str >= 9 && **str <= 13)))
+    while (**str == ' ' || (**str >= 9 && **str <= 13))
         *(str)++;
 }
 ```
@@ -47,7 +47,7 @@ Agora, eliminaremos todos os sinais contando a quantidade de sinais negativos.
 ```c
 void    ft_remove_sign(char **str, int *sign)
 {
-    while (**str == '+' || **str == -)
+    while (**str == '+' || **str == '-')
     {
         if (**str == '-')
             *sign += 1;
