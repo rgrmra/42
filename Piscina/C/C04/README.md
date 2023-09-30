@@ -1,4 +1,4 @@
-# C02
+# C04
 
 O objetivo dessa lista é te fazer compreender funções que trabalhem com `strings` e retornam algum valor númerico. Trata-se de conversões em C.
 
