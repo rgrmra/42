@@ -1,4 +1,4 @@
-# C02
+# C03
 
 O objetivo dessa lista é te fazer compreender funções que trabalhem com `strings` em C. Se você ainda não estudou `strings` essa é uma boa hora para começar.
 
