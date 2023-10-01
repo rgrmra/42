@@ -15,7 +15,7 @@ Exercícios de C:
 - [C02](./C/C02/) - Strings
 - [C03](./C/C03/) - Funções
 - [C04](./C/C04/) - Conversões
-- C05 - Recursividade
+- [C05](./C/C05/) - Recursividade
 - C06 - Argc e Argv
 - C07 - Malloc
 
